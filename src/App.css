@@ -1,38 +1,126 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.header{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
   }
+  .header-p{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    margin: 20px;
+    text-align: center;
+    gap: 2px;
+    margin-top: 100px;
+  }
+  .header span{
+    font-size: 16px;
+    color: #82899B;
+  }
+  .header a{
+    margin-top: 35px;
+    margin-left: -10px;
+  }
+.btn-wallet{
+  width: 166px;
+  height: 50px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  color: white;
+  background-color: blue;
+  border-radius: 50px;
+}
+.btn-wallet a{
+  cursor: pointer;
+
+}
+.Main{
+  margin-top: 70px;
+ display: grid;
+grid-gap: 1rem;
+  grid-template-areas: 
+  'item1 item2 item2'
+  'item3 item2 item2'
+  'item3 item4 item4'
+  'item5 item4 item4'
+  'item5 item6 item6';
+  grid-template-rows: minmax(200px,auto);
+    grid-template-columns: minmax(497px,auto);
+}
+.item1{
+  grid-area: item1;
+  font-size: 14px;
+  padding: 2rem;
+    background-color: #FAFCFF;
+    /* color: white; */
+    /* text-align: center; */
+    /* font-size: 1.4rem; */
+    border-radius: 20px;
+}
+.img-circle{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.item2{
+  grid-area: item2;
+  font-size: 14px;
+  padding: 2rem;
+  background-color: #FAFCFF;
+  border-radius: 20px;
+}
+.img2-circle{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.item3{
+  grid-area: item3;
+  font-size: 14px;
+  padding: 2rem;
+  background-color: #FAFCFF;
+  border-radius: 20px;
+}
+.item4{
+  grid-area: item4;
+  padding: 2rem;
+  background-color: #FAFCFF;
+  font-size: 13px;
+  border-radius: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.item5{
+  grid-area: item5;
+}
+.item6{
+  grid-area: item6;
+  padding: 2rem;
+  background-color: #FAFCFF;
+  font-size: 13px;
+  border-radius: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  text-align: left;
+}
+.item5{
+  padding: 2rem;
+  background-color: #FAFCFF;
+  text-align: center;
+  font-size: 1.4rem;
+  border-radius: 20px;
+  
 }
 
-.App-link {
-  color: #61dafb;
+.Main-p{
+   
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.item2{
+  
+}
+.it-3{
+ 
 }
